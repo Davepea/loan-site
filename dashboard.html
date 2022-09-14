@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="dash.css">
+    
+</head>
+<body>
+    <div id="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-color'></i>
+                <div class="logo_name">paveB</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tootip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">Account</span>
+                </a>
+                <span class="tootip">account</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">message</span>
+                </a>
+                <span class="tootip">message</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder'></i>
+                    <span class="links_name">transactions</span>
+                </a>
+                <span class="tootip">transactions</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">loans</span>
+                </a>
+                <span class="tootip">loans</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">settings</span>
+                </a>
+                <span class="tootip">settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="image/img (10).jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">Peace Adebayo</div>
+                        <div class="job">Web developer</div>
+                    </div>
+                </div>
+            </div>
+            <i class='bx bx-user' id="log_out"></i>
+        </div>
+    </div>
+    <div class="home_content pt-3">
+
+
+
+        <div class="dashboard">
+            <div class="dash-contt">
+                <div class="container">
+                    <div class="first_acc row">
+                        <div class="col col-lg-3 ">
+                            <div class="crd_acc">
+                                <i class='bx bx-user' ></i>
+
+                                <p>Account</p>
+                                <h2 id="">$</h2>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+    <script src="bootstrap.js"></script>
+    <script>
+        let btn = document.querySelector("#btn");
+        const sidebarEl = document.getElementById('sidebar');
+        
+
+
+        btn.onclick= function(){
+            sidebarEl.classList.toggle("active")
+        }
+    </script>
+    
+</body>
+</html>
